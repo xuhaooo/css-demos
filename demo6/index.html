@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航栏案例</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+        .banner {
+            width: 760px;
+            height: 150px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+        .nav {
+            width: 760px;
+            height: 32px;
+            background: url(images/nav_bg.jpg) repeat-x;
+            margin: 0 auto;
+        }
+        .nav li {
+            float: left;
+        }
+        /* 一定要给a高度而不是给li高度，因为要做a:hover效果 */
+        .nav li a {
+            display: block;
+            width: 80px;
+            height: 32px;
+            line-height: 32px;
+            background: url(images/button1.jpg) no-repeat;
+            color: #40510a;
+            font-size: 12px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav li a:hover {
+            background: url(images/button2.jpg) no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="images/banner.jpg" alt="">
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#">网站首页</a></li>
+            <li><a href="#">网站首页</a></li>
+            <li><a href="#">网站首页</a></li>
+            <li><a href="#">网站首页</a></li>
+            <li><a href="#">网站首页</a></li>
+            <li><a href="#">网站首页</a></li>
+        </ul>
+    </div>
+</body>
+</html>
