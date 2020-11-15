@@ -1,0 +1,312 @@
+/* CSS 初始化代码 CSS reset*/
+/* 清除元素默认内外边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 清除默然列表样式 */
+li {
+    list-style: none;
+}
+button {
+    border: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #f3f5f7;
+}
+.w {
+    width: 1200px;
+    margin: auto;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+/* header START*/
+.header {
+    height: 42px;
+    margin: 30px auto;
+}
+.logo {
+    float: left;
+    margin-right: 60px;
+}
+.nav {
+    float: left;
+}
+.nav ul li {
+    float: left;
+}
+.nav ul li a {
+    display: block;
+    /* 不给宽度 靠padding撑开 */
+    height: 40px;
+    padding: 0 10px;
+    margin-right: 20px;
+    line-height: 40px;
+    color: #050505;
+    font-size: 18px;
+    text-decoration: none;
+}
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+.search {
+    float: left;
+}
+.search input {
+    float: left;
+    width: 340px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: none;
+    padding-left: 20px;
+    color: #ccc;
+}
+.search button {
+    /* 行内块img/表单/td，之间间隙 */
+    float: left;
+    width: 50px;
+    height: 42px;
+    background: url(images/btn.png);
+}
+.user {
+    float: left;
+    height: 42px;
+    /* line-height == height只能实现单行文本的垂直居中，后面再说怎么让图片垂直居中 */
+    line-height: 42px;
+    margin-left: 30px;
+    font-size: 14px;
+    color: #666;
+}
+/* header END */
+
+/* banner START */
+.banner {
+    height: 420px;
+    background: #1c036c url(images/banner2.jpg) no-repeat top center;
+}
+.subnav {
+    float: left;
+    width: 150px;
+    height: 420px;
+    padding: 0 20px;
+    background: rgba(0, 0, 0, .3);
+}
+.subnav li {
+    height: 45px;
+    line-height: 45px;
+}
+.subnav li a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.subnav li a:hover {
+    color: #00b4ff;
+}
+.subnav span{
+    float: right;
+}
+.course {
+    float: right;
+    width: 228px;
+    height: 300px;
+    /* 本来会外边距塌陷，但是子盒子有浮动 */
+    margin-top: 50px;
+    background-color: #fff;
+}
+.course-hd {
+    height: 47px;
+    line-height: 47px;
+    background-color: #9bceea;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+.course-bd {
+    /* height: 253px; */
+    padding: 0 15px;
+}
+.course ul {
+     /* margin-top: 10px; */
+    /* 会出现外边距塌陷的问题  */
+    padding-top: 10px;
+}
+.course-bd li {
+    height: 48px;
+    margin-top: 14px;
+    border-bottom: 1px solid #ccc;
+}
+.course-bd h4 {
+    color: #4e4e4e;
+    font-size: 16px;
+}
+.course-bd p {
+    color: #a5a5a5;
+    font-size: 12px;
+}
+.all {
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #00a4ff;
+    margin-top: 10px;
+    color: #00a4ff;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+.all:hover {
+    background-color: #00a4ff;
+    color: #fff;
+}
+/* banner END */
+
+/* goods START */
+.goods {
+    height: 60px;
+    /* 利用行高继承性 */
+    line-height: 60px;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+}
+.goods h3 {
+    float: left;
+    margin: 0 30px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+.goods-item {
+    float: left;
+    color: #bfbfbf;
+}
+.goods-item a {
+    margin: 0 30px;
+    font-size: 16px;
+    color: #050505;
+}
+.goods .mod {
+    float: right;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #00a4ff;
+
+}
+/* goods END */
+
+/* box START */
+.box {
+    margin-top: 15px;
+}
+.box-hd {
+    height: 60px;
+    line-height: 60px;
+}
+.box-hd h3 {
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+    color: #494949;
+}
+.box-hd a {
+    float: right;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+/* 一定不要给高度，因为可能是2排可能是3排，不确定内容多少的 */
+.box-bd {
+    width: 1215px;
+}
+.box-bd ul li {
+    float: left;
+    width: 228px;
+    height: 270px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+}
+.box-bd li img {
+    width: 100%;
+}
+.box-bd li h4 {
+    margin: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #050505;
+}
+.box-bd li p {
+    margin: 0 20px;
+    font-size: 12px;
+    color: #999;
+}
+.box-bd span {
+    color: #ff7c2d;
+}
+/* box END */
+
+/* footer START */
+.footer {
+    height: 385px;
+    /* 已经有高度了，给padding盒子变大 */
+    padding-top: 30px;
+    background-color: #fff;
+}
+.copyright {
+    float: left;
+}
+.copyright p {
+    margin: 20px 0 15px 0;
+    font-size: 12px;
+    color: #666;
+}
+.app {
+    display: block;
+    /* 不要量边框 */
+    width: 118px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid #00a4ff;
+    font-size: 16px;
+    color: #00a4ff;
+    text-align: center;
+}
+.app:hover {
+    background-color: #00a4ff;
+    color: #fff;
+}
+.links {
+    float: right;
+}
+.links dl {
+    float: left;
+    margin-left: 100px;
+}
+.links dt {
+    /* 高度剩余法：本身是上左对齐，剩下的空间就空出来了，不需要给padding/margin */
+    height: 35px;
+    font-size: 16px;
+    color: #333;
+}
+.links dd a {
+    font-size: 12px;
+    color: #333;
+}
+.links dd a:hover {
+    color: #00a4ff;
+}
+/* footer END */
