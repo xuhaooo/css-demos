@@ -32,6 +32,18 @@ body {
 .clearfix {
     *zoom: 1;
 }
+/* 固定的侧边栏 */
+.fixedbar {
+    position: fixed;
+    top: ;
+    left: 50%;
+    margin-left: -790px;
+    z-index: 999;
+    width: 180px;
+    height: 420px;
+    background-color: pink;
+}
+
 /* header START*/
 .header {
     height: 42px;
@@ -232,6 +244,7 @@ body {
     width: 1215px;
 }
 .box-bd ul li {
+    position: relative;
     float: left;
     width: 228px;
     height: 270px;
@@ -248,6 +261,12 @@ body {
     font-size: 14px;
     font-weight: 400;
     color: #050505;
+}
+.box-bd .hot {
+    position: absolute;
+    top: 0;
+    right: -4px;
+    width: 40px;
 }
 .box-bd li p {
     margin: 0 20px;
