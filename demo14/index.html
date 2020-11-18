@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微信导航栏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .nav {
+            margin-top: 20px;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        body {
+            background: url(images/wx.jpg) repeat-x;
+        }
+        .nav a {
+            display: inline-block;
+            height: 33px;
+            line-height: 33px;
+            padding-left: 15px;
+            background: url(images/to.png) no-repeat;
+            color: #fff;
+            text-align: center;
+        }
+        .nav a:hover,
+        .nav a:hover span {
+            background-image: url(images/ao.png);
+        }
+        .nav li {
+            float: left;
+            margin-right: 5px;
+        }
+        .nav span {
+            display: inline-block;
+            height: 33px;
+            padding-right: 15px;
+            background: url(images/to.png) no-repeat right top;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="#">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>帮助与反馈</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>公众平台</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>开放平台</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
